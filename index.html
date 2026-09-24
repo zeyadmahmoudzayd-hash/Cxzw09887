@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ACADEMIX | منصة الكورسات</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>ACADE</span>MIX
+    </div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#courses">الكورسات</a>
+        <a href="#categories">التخصصات</a>
+        <a href="#about">عن المنصة</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button class="icon-btn" onclick="openSearch()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="login-btn" onclick="openLogin()">
+            تسجيل الدخول
+        </button>
+
+        <button class="signup-btn" onclick="openSignup()">
+            ابدأ مجانًا
+        </button>
+
+    </div>
+
+    <button class="mobile-menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <i class="fa-solid fa-bolt"></i>
+            منصة تعليمية حديثة
+        </div>
+
+        <h1>
+            اتعلم مهارات
+            <span>المستقبل</span>
+            وابدأ طريقك للنجاح
+        </h1>
+
+        <p>
+            كورسات احترافية في البرمجة، التصميم،
+            الذكاء الاصطناعي، التسويق والمزيد.
+            تعلم من أفضل المحتويات وبالطريقة التي تناسبك.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#courses" class="primary-btn">
+                استكشف الكورسات
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+            <button class="video-btn" onclick="showVideo()">
+                <span class="play">
+                    <i class="fa-solid fa-play"></i>
+                </span>
+                شاهد كيف تعمل المنصة
+            </button>
+
+        </div>
+
+        <div class="hero-students">
+
+            <div class="avatars">
+
+                <img src="https://i.pravatar.cc/100?img=12">
+                <img src="https://i.pravatar.cc/100?img=32">
+                <img src="https://i.pravatar.cc/100?img=5">
+                <img src="https://i.pravatar.cc/100?img=44">
+                <span>+</span>
+
+            </div>
+
+            <div>
+                <strong>+25,000</strong>
+                <small>طالب يتعلمون معنا</small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-visual">
+
+        <div class="floating-card card-one">
+
+            <div class="mini-icon purple">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div>
+                <strong>Web Development</strong>
+                <small>+2,500 طالب</small>
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=85"
+                alt="Students learning"
+            >
+
+            <div class="image-gradient"></div>
+
+            <div class="hero-play">
+                <i class="fa-solid fa-play"></i>
+            </div>
+
+        </div>
+
+
+        <div class="floating-card card-two">
+
+            <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <div>
+                <strong>98% نجاح</strong>
+                <small>تقييم الطلاب</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+    <div class="stat">
+        <i class="fa-solid fa-users"></i>
+
+        <div>
+            <strong>25K+</strong>
+            <span>طالب</span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <i class="fa-solid fa-book-open"></i>
+
+        <div>
+            <strong>150+</strong>
+            <span>كورس</span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <i class="fa-solid fa-chalkboard-user"></i>
+
+        <div>
+            <strong>50+</strong>
+            <span>مدرب</span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <i class="fa-solid fa-certificate"></i>
+
+        <div>
+            <strong>12K+</strong>
+            <span>شهادة</span>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories" id="categories">
+
+    <div class="section-head">
+
+        <div>
+            <span>التخصصات</span>
+
+            <h2>
+                اختار المجال اللي
+                <b>تحبه</b>
+            </h2>
+        </div>
+
+        <p>
+            مجالات متنوعة تساعدك تطور مهاراتك
+            وتوصل لهدفك.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <div class="category-card purple-card" onclick="filterCategory('programming')">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <h3>البرمجة</h3>
+            <p>32 كورس</p>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </div>
+
+
+        <div class="category-card blue-card" onclick="filterCategory('design')">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-pen-nib"></i>
+            </div>
+
+            <h3>التصميم</h3>
+            <p>24 كورس</p>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </div>
+
+
+        <div class="category-card orange-card" onclick="filterCategory('business')">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>الأعمال</h3>
+            <p>19 كورس</p>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </div>
+
+
+        <div class="category-card green-card" onclick="filterCategory('ai')">
+
+            <div class="category-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+
+            <h3>الذكاء الاصطناعي</h3>
+            <p>18 كورس</p>
+
+            <i class="fa-solid fa-arrow-left arrow"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COURSES ================= -->
+
+<section class="courses" id="courses">
+
+    <div class="section-head">
+
+        <div>
+            <span>الكورسات المميزة</span>
+
+            <h2>
+                تعلم من أفضل
+                <b>الكورسات</b>
+            </h2>
+        </div>
+
+        <button class="view-all" onclick="showAllCourses()">
+            عرض كل الكورسات
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+    </div>
+
+
+    <div class="course-filters">
+
+        <button class="filter active" onclick="filterCourses('all', this)">
+            الكل
+        </button>
+
+        <button class="filter" onclick="filterCourses('programming', this)">
+            برمجة
+        </button>
+
+        <button class="filter" onclick="filterCourses('design', this)">
+            تصميم
+        </button>
+
+        <button class="filter" onclick="filterCourses('business', this)">
+            أعمال
+        </button>
+
+        <button class="filter" onclick="filterCourses('ai', this)">
+            AI
+        </button>
+
+    </div>
+
+
+    <div class="course-grid" id="courseGrid"></div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="why-us" id="about">
+
+    <div class="why-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85"
+            alt="Learning"
+        >
+
+        <div class="experience-card">
+
+            <strong>10+</strong>
+
+            <span>
+                سنوات من<br>
+                الخبرة
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="why-content">
+
+        <span>لماذا ACADEMIX؟</span>
+
+        <h2>
+            كل الأدوات اللي تحتاجها
+            <b>عشان تنجح</b>
+        </h2>
+
+        <p>
+            مش مجرد كورسات. إحنا بنساعدك تبني
+            مهارات حقيقية تقدر تستخدمها في الدراسة
+            والشغل والحياة العملية.
+        </p>
+
+
+        <div class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+
+                <div>
+                    <h3>فيديوهات عالية الجودة</h3>
+                    <p>محتوى واضح ومنظم وسهل المتابعة.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <div>
+                    <h3>تطبيق عملي</h3>
+                    <p>مشاريع وتمارين تساعدك تطبق اللي اتعلمته.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+
+                <div>
+                    <h3>شهادات إتمام</h3>
+                    <p>احصل على شهادة بعد إنهاء الكورس.</p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <div>
+                    <h3>دعم مستمر</h3>
+                    <p>مساعدتك أثناء رحلة التعلم.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INSTRUCTOR ================= -->
+
+<section class="instructor">
+
+    <div>
+
+        <span>ابدأ بالتدريس معنا</span>
+
+        <h2>
+            عندك خبرة؟
+            <br>
+            <b>شاركها مع العالم.</b>
+        </h2>
+
+        <p>
+            انضم إلى مجتمع المدربين وساعد آلاف
+            الطلاب على تطوير مهاراتهم.
+        </p>
+
+        <button class="primary-btn" onclick="openSignup()">
+            كن مدربًا معنا
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+    </div>
+
+    <div class="instructor-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85"
+            alt="Instructor"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+    <div class="section-head center">
+
+        <span>آراء الطلاب</span>
+
+        <h2>
+            الطلاب
+            <b>بيحبوا ACADEMIX</b>
+        </h2>
+
+    </div>
+
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "الموقع ساعدني أبدأ البرمجة من الصفر.
+                الكورسات منظمة جدًا والشرح ممتاز."
+            </p>
+
+            <div class="student">
+
+                <img src="https://i.pravatar.cc/100?img=11">
+
+                <div>
+                    <strong>أحمد محمد</strong>
+                    <span>Web Developer</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "أكتر حاجة عجبتني إن كل كورس فيه
+                تطبيق عملي ومشاريع حقيقية."
+            </p>
+
+            <div class="student">
+
+                <img src="https://i.pravatar.cc/100?img=47">
+
+                <div>
+                    <strong>سارة علي</strong>
+                    <span>UI Designer</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "التصميم جميل جدًا والكورسات متنوعة.
+                قدرت أتعلم AI وأنا في البيت."
+            </p>
+
+            <div class="student">
+
+                <img src="https://i.pravatar.cc/100?img=68">
+
+                <div>
+                    <strong>يوسف خالد</strong>
+                    <span>AI Student</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <span>ابدأ الآن</span>
+
+        <h2>
+            مستعد تبدأ
+            <b>رحلتك؟</b>
+        </h2>
+
+        <p>
+            سجل مجانًا واستكشف مئات الكورسات.
+        </p>
+
+        <button onclick="openSignup()" class="primary-btn">
+            إنشاء حساب مجاني
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-about">
+
+            <div class="logo">
+                <span>ACADE</span>MIX
+            </div>
+
+            <p>
+                منصة تعليمية عربية تساعدك
+                على تعلم مهارات المستقبل.
+            </p>
+
+            <div class="social">
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>المنصة</h3>
+
+            <a href="#courses">الكورسات</a>
+            <a href="#categories">التخصصات</a>
+            <a href="#about">عن المنصة</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>المساعدة</h3>
+
+            <a href="#">الأسئلة الشائعة</a>
+            <a href="#">تواصل معنا</a>
+            <a href="#">سياسة الخصوصية</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>النشرة البريدية</h3>
+
+            <p>
+                اشترك ليصلك كل جديد.
+            </p>
+
+            <div class="newsletter">
+
+                <input
+                    type="email"
+                    placeholder="البريد الإلكتروني"
+                >
+
+                <button>
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 ACADEMIX — جميع الحقوق محفوظة
+    </div>
+
+</footer>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModals()">
+            ×
+        </button>
+
+        <div class="modal-logo">
+            <span>ACADE</span>MIX
+        </div>
+
+        <h2>أهلاً بك من جديد 👋</h2>
+
+        <p>سجل دخولك للوصول إلى حسابك.</p>
+
+        <form onsubmit="login(event)">
+
+            <label>البريد الإلكتروني</label>
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="example@email.com"
+                required
+            >
+
+            <label>كلمة المرور</label>
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="••••••••"
+                required
+            >
+
+            <button class="modal-btn">
+                تسجيل الدخول
+            </button>
+
+        </form>
+
+        <div class="switch">
+            ليس لديك حساب؟
+            <button onclick="switchSignup()">
+                إنشاء حساب
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SIGNUP MODAL ================= -->
+
+<div class="modal" id="signupModal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closeModals()">
+            ×
+        </button>
+
+        <div class="modal-logo">
+            <span>ACADE</span>MIX
+        </div>
+
+        <h2>أنشئ حسابك 🚀</h2>
+
+        <p>ابدأ التعلم مجانًا الآن.</p>
+
+        <form onsubmit="signup(event)">
+
+            <label>الاسم</label>
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="اسمك"
+                required
+            >
+
+            <label>البريد الإلكتروني</label>
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="example@email.com"
+                required
+            >
+
+            <label>كلمة المرور</label>
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="••••••••"
+                required
+            >
+
+            <button class="modal-btn">
+                إنشاء الحساب
+            </button>
+
+        </form>
+
+        <div class="switch">
+            لديك حساب بالفعل؟
+            <button onclick="switchLogin()">
+                تسجيل الدخول
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= COURSE MODAL ================= -->
+
+<div class="modal" id="courseModal">
+
+    <div class="course-details">
+
+        <button class="close" onclick="closeModals()">
+            ×
+        </button>
+
+        <img id="detailImage" src="" alt="Course">
+
+        <div class="details-content">
+
+            <span id="detailCategory"></span>
+
+            <h2 id="detailTitle"></h2>
+
+            <p id="detailDescription"></p>
+
+            <div class="detail-meta">
+
+                <span>
+                    <i class="fa-solid fa-clock"></i>
+                    <b id="detailDuration"></b>
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-users"></i>
+                    <b id="detailStudents"></b>
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-star"></i>
+                    <b id="detailRating"></b>
+                </span>
+
+            </div>
+
+            <div class="detail-bottom">
+
+                <strong id="detailPrice"></strong>
+
+                <button class="modal-btn" onclick="enrollCourse()">
+                    اشترك في الكورس
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <button class="search-close" onclick="closeSearch()">
+        ×
+    </button>
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            id="searchInput"
+            type="text"
+            placeholder="ابحث عن كورس..."
+            oninput="searchCourses()"
+        >
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
